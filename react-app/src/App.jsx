@@ -1,36 +1,22 @@
 import './App.css';
-import Button from './components/Button/Button';
-import CartButton from './components/CartButton/CartButton';
-import JournalItem from './components/JournalItem/JournalItem';
+import DataSection from './components/DataSection/DataSection';
+import Header from './components/Header/Header';
+
+import HeadTitle from './components/HeadTitle/HeadTitle';
+import MainParagraph from './components/MainParagraph/MainParagraph';
+import SearchInput from './components/SearchInput/SearchInput';
 
 function App() {
 
-  const data = [
-    {
-      title: 'Подготовка к обновлению курсов',
-      text: 'Горные походы открывают удивительные природные ландшафт',
-      date: new Date()
-    },
-    {
-      title: 'Подготовка',
-      text: 'Горные походы открывают',
-      date: new Date()
-    }
-  ];
-
   return (
     <>
-      <div>
-        <div>Project</div>
-        <Button />
-        <CartButton>+ Новое воспоминание</CartButton>
-        <CartButton>
-          <JournalItem title={data[0].title} date={data[0].date} text={data[0].text} />
-        </CartButton>
-        <CartButton>
-          <JournalItem title={data[1].title} date={data[1].date} text={data[1].text} />
-        </CartButton>
+      <Header />
+      <div className='search-block'>
+        <HeadTitle title={'Поиск'} />
+        <MainParagraph text={'Введите название фильма, сериала или мультфильма для поиска и добавления в избранное.'} />
+        <SearchInput />
       </div>
+      <DataSection />
     </>
   );
 }

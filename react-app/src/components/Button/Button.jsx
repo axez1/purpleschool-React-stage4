@@ -1,10 +1,10 @@
 import './Button.css';
 
-function Button() {
+function Button({ button_title, onClick }) {
 
   return (
 
-    <button className='button accent'>Сохранить</button>
+    <button className='button' onClick={onClick}>{button_title}</button>
 
   );
 }

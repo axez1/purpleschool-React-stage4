@@ -1,17 +1,13 @@
 .button {
-  border-radius: 6px;
-  padding: 8px 30px;
-  font-family: inherit;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  border: 2px solid #7b6ef6;
+  border-radius: 12px;
+  padding: 16px 32px;
+  font-weight: 400;
   font-size: 16px;
-  border: none;
-  color: aliceblue;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #7b6ef6;
 }
 .button:hover {
-  background-color: #333cdc;
-}
-
-.accent {
-  background-color: #312eb5;
+  background-color: #6d5df9;
 }
