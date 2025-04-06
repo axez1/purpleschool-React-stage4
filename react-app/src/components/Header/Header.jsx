@@ -1,16 +1,16 @@
-import './Header.css'
+import styles from './Header.module.css'
 import logoIcon from '../../assets/Bookmark.svg'
 import NavHeader from '../NavHeader/NavHeader'
 
-const Header = () => {
+const Header = ({ user, onLogout }) => {
   return (
-    <header className='header'>
+    <header className={styles.header}>
       <div className='container'>
-        <div className='header__wrapper'>
-          <a href="#" className='logo'>
+        <div className={styles.header__wrapper}>
+          <a href="#" className={styles.logo}>
             <img src={logoIcon} alt="logotype" />
           </a>
-          <NavHeader />
+          <NavHeader user={user} onLogout={onLogout} />
         </div>
       </div>
     </header>

@@ -29,7 +29,7 @@
   background: rgba(0, 0, 0, 0.65);
 }
 
-.cart__rating--count {
+.cart__rating_count {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -45,7 +45,7 @@
   overflow: hidden;
 }
 
-.cart__poster--image {
+.cart__poster_image {
   height: 100%;
 }
 
@@ -58,7 +58,7 @@
   margin-left: 8px;
 }
 
-.cart__button--action {
+.cart__button_action {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,10 +66,20 @@
   margin-left: 8px;
 }
 
-.cart__button--text {
+.cart__button_action:active {
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+
+.cart__button_text {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #7b6ef6;
+
+  &:hover {
+    color: #5a4dd0;
+    transition: 0.3s;
+  }
 }

@@ -1,4 +1,4 @@
-.search-form {
+.search_form {
   position: relative;
   max-width: 511px;
   width: 100%;
@@ -34,7 +34,7 @@
   outline: none;
 }
 
-.search-button {
+.search_button {
   position: absolute;
   top: 22px;
   left: 18px;

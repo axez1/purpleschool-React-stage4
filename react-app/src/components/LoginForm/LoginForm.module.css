@@ -1,0 +1,8 @@
+.form_wrapper {
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 27px;
+}

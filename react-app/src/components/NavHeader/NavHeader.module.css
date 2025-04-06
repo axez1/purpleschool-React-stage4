@@ -28,7 +28,7 @@
   transition: color 0.3s;
 }
 
-.nav__link-count {
+.nav__link_count {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -40,5 +40,38 @@
   font-size: 14px;
   line-height: 1.71429;
   letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.user_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 96px;
+  margin-left: auto;
+}
+
+.user_name {
+  font-size: 16px;
+  color: #a8aebf;
+}
+
+.user_name_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.nav__logout {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #a8aebf;
+  transition: color 0.2s;
+}
+
+.nav__logout:hover {
   color: #fff;
 }
