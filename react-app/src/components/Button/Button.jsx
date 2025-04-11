@@ -1,10 +1,10 @@
-import './Button.css';
+import styles from './Button.module.css';
 
 function Button({ button_title, onClick }) {
 
   return (
 
-    <button className='button' onClick={onClick}>{button_title}</button>
+    <button className={styles.button} onClick={onClick}>{button_title}</button>
 
   );
 }

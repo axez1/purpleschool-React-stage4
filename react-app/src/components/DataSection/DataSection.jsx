@@ -1,6 +1,6 @@
 import CartPoster from '../CartPoster/CartPoster'
 import mockedData from '../../data/data.js'
-import './DataSection.css'
+import styles from './DataSection.module.css'
 
 const DataSection = () => {
 
@@ -9,7 +9,7 @@ const DataSection = () => {
   return (
     <section className='section data__section'>
       <div className="container">
-        <div className="data__section--wrapper">
+        <div className={styles.data__section_wrapper}>
           {posterArray.map((item) => (
             < CartPoster
               key={item.id}

@@ -1,0 +1,31 @@
+.input_name {
+  border: 1px solid #323b54;
+  border-radius: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 384px;
+  height: 64px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.invalid {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.input_name::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14286;
+  color: #475069;
+}
+
+.input_name:focus-visible.invalid {
+  border: 1px solid #304c98;
+  outline: none;
+}
+
+.input_name:focus-visible.invalid {
+  border: 1px solid #ff0000;
+  outline: none;
+}

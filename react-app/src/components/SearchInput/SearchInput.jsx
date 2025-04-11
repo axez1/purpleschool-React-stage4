@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Button from '../Button/Button'
-import './SearchInput.css'
+import styles from './SearchInput.module.css'
 import search from '../../assets/search.svg'
 
 const SearchInput = () => {
@@ -20,9 +20,9 @@ const SearchInput = () => {
 
   return (
 
-    <form className='search-form' onSubmit={addSubmitForm}>
-      <img className='search-button' src={search} alt='search button' />
-      <input className='input' name='search' type='text' value={inputData} onChange={inputChange} placeholder='Введите название' />
+    <form className={styles.search_form} onSubmit={addSubmitForm}>
+      <img className={styles.search_button} src={search} alt='search button' />
+      <input className={styles.input} name='search' type='text' value={inputData} onChange={inputChange} placeholder='Введите название' />
       <Button button_title={'Искать'} onClick={() => { }} />
     </form>
 
