@@ -1,27 +1,27 @@
-import CartPoster from '../CartPoster/CartPoster'
-import mockedData from '../../data/data.js'
-import styles from './DataSection.module.css'
+import CartPoster from '../CardPoster/CardPoster';
+import mockedData from '../../data/data';
+import styles from './DataSection.module.css';
 
 const DataSection = () => {
-
   const posterArray = mockedData();
 
   return (
-    <section className='section data__section'>
+    <section className="section data__section">
       <div className="container">
         <div className={styles.data__section_wrapper}>
           {posterArray.map((item) => (
-            < CartPoster
+            <CartPoster
               key={item.id}
+              id={item.id}
               url={item.url}
               name={item.namePoster}
-              likes={item.likes}
+              rating={item.rating}
             />
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default DataSection
+export default DataSection;
